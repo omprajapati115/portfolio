@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { resumeData as defaultResumeData } from "./components/ResumeData";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
