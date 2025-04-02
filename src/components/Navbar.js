@@ -58,7 +58,7 @@ const Navbar = ({ resumeData }) => {
                 {resumeData.personal.name.charAt(0)}
               </motion.div>
               <span className="text-white font-bold text-xl hidden sm:inline-block">
-                {resumeData.personal.name.split(' ')[0]}
+                {resumeData.personal.name}
               </span>
             </Link>
 

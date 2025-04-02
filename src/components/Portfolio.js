@@ -65,8 +65,8 @@ export default function Portfolio({ resumeData }) {
         </div>
         <div className="mt-6">
           <a 
-            href="/resume.pdf" 
-            download
+            href={process.env.PUBLIC_URL + '/Om_Resume.pdf'} 
+            download="Om_Resume.pdf"
             className="bg-black text-white px-4 py-2 rounded-lg inline-flex items-center gap-2 hover:bg-gray-800 transition-colors"
           >
             <Download className="h-5 w-5" /> Download Resume

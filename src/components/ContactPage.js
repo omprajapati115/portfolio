@@ -289,10 +289,10 @@ const ContactPage = ({ resumeData }) => {
                 question: "What is your approach to new AI projects?",
                 answer: "I believe in starting with a clear understanding of the problem and desired outcomes. I then evaluate existing solutions, develop a tailored approach, and iterate based on feedback and metrics."
               },
-              {
-                question: "Do you offer mentoring or training services?",
-                answer: "Yes, I provide mentoring and training for teams looking to enhance their AI/ML capabilities. This can include workshops, code reviews, and personalized learning plans."
-              },
+              // {
+              //   question: "Do you offer mentoring or training services?",
+              //   answer: "Yes, I provide mentoring and training for teams looking to enhance their AI/ML capabilities. This can include workshops, code reviews, and personalized learning plans."
+              // },
             ].map((faq, idx) => (
               <motion.div
                 key={idx}

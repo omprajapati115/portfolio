@@ -2,9 +2,9 @@
 export const resumeData = {
   personal: {
     name: "Om Prajapati",
-    phone: "+1(416)-768-6449",
-    email: "prajapatiom127@gmail.com",
-    linkedin: "linkedin.com/omprajapati",
+    phone: "+1(416)-768-6848",
+    email: "prajapatiom185@gmail.com",
+    linkedin: "www.linkedin.com/in/om-prajapati-b722721b4",
     location: "Toronto, ON"
   },
   objective: "Seeking a Machine Learning Research Co-Op position to apply my skills in deep learning, computer vision, and model optimization while contributing to innovative AI research and real-world applications. Passionate about developing state-of-the-art computer vision solutions and deploying efficient models for scalable performance.",

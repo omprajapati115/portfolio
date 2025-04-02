@@ -24,7 +24,7 @@ const HomePage = ({ resumeData }) => {
               {resumeData.personal.name}
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-gray-300">
-              AI/ML Engineer & Research Specialist
+              AI/ML Engineer 
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               <Link 

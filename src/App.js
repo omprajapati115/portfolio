@@ -8,6 +8,7 @@ import ProjectsPage from "./components/ProjectsPage";
 import ContactPage from "./components/ContactPage";
 import Portfolio from "./components/Portfolio";
 import ResumeUploader from "./components/ResumeUploader";
+import Footer from "./components/Footer";
 
 function App() {
   const [resumeData, setResumeData] = useState(defaultResumeData);
@@ -20,9 +21,9 @@ function App() {
   
   return (
     <Router>
-      <div className="min-h-screen bg-gray-900 text-white">
+      <div className="min-h-screen bg-gray-900 text-white flex flex-col">
         {showUploader ? (
-          <div className="p-8">
+          <div className="p-8 flex-grow">
             <h1 className="text-3xl font-bold text-center mb-8">Upload Your Resume</h1>
             <ResumeUploader onResumeDataParsed={handleResumeDataParsed} />
             <div className="text-center mt-6">
@@ -37,14 +38,15 @@ function App() {
         ) : (
           <>
             <Navbar resumeData={resumeData} />
-            
-            <Routes>
-              <Route path="/" element={<HomePage resumeData={resumeData} />} />
-              <Route path="/about" element={<AboutPage resumeData={resumeData} />} />
-              <Route path="/projects" element={<ProjectsPage resumeData={resumeData} />} />
-              <Route path="/contact" element={<ContactPage resumeData={resumeData} />} />
-              <Route path="/resume" element={<Portfolio resumeData={resumeData} />} />
-            </Routes>
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<HomePage resumeData={resumeData} />} />
+                <Route path="/about" element={<AboutPage resumeData={resumeData} />} />
+                <Route path="/projects" element={<ProjectsPage resumeData={resumeData} />} />
+                <Route path="/contact" element={<ContactPage resumeData={resumeData} />} />
+                <Route path="/resume" element={<Portfolio resumeData={resumeData} />} />
+              </Routes>
+            </main>
             
             <div className="fixed bottom-4 right-4 z-10">
               <button 
@@ -61,6 +63,7 @@ function App() {
             </div>
           </>
         )}
+        <Footer />
       </div>
     </Router>
   );

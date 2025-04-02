@@ -6,7 +6,7 @@ const AboutPage = ({ resumeData }) => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Hero Section */}
-      <div className="relative py-24 overflow-hidden">
+      <div className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-purple-900/40"></div>
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485')] bg-cover bg-center opacity-10"></div>
@@ -20,7 +20,7 @@ const AboutPage = ({ resumeData }) => {
           >
             <h1 className="text-5xl font-bold mb-6">About Me</h1>
             <p className="text-xl max-w-3xl mx-auto text-gray-300">
-              AI/ML Engineer and Researcher
+              AI/ML Engineer 
             </p>
           </motion.div>
         </div>
@@ -29,29 +29,29 @@ const AboutPage = ({ resumeData }) => {
       {/* About Section */}
       <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
             <motion.div 
-              className="lg:w-2/5"
+              className="lg:w-2/5 relative mb-24 lg:mb-0"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
               <div className="relative">
                 {/* Profile Image */}
-                <div className="w-full h-[400px] rounded-2xl overflow-hidden">
+                <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaCUyMHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=70" 
-                    alt="Profile" 
-                    className="w-full h-full object-cover"
+                    src={process.env.PUBLIC_URL + '/passportphoto.jpg'}
+                    alt="Om Prajapati" 
+                    className="w-full h-full object-contain bg-gray-900"
                   />
                 </div>
                 
                 {/* Floating Info Card */}
-                <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-blue-600 to-purple-800 p-6 rounded-xl shadow-xl">
+                <div className="absolute -bottom-26 right-0 bg-gradient-to-br from-blue-600 to-purple-800 p-6 rounded-xl shadow-xl z-10">
                   <div className="flex flex-col gap-3 text-white">
                     <div className="flex items-center gap-2">
                       <Calendar className="h-5 w-5 text-blue-300" />
-                      <span>5+ Years Experience</span>
+                      <span>1 Years Experience</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="h-5 w-5 text-blue-300" />
@@ -101,14 +101,6 @@ const AboutPage = ({ resumeData }) => {
                   <p className="text-3xl font-bold text-blue-400">6+</p>
                   <p className="text-sm text-gray-400">Projects Completed</p>
                 </div>
-                <div className="bg-gray-800 p-4 rounded-lg text-center flex-1">
-                  <p className="text-3xl font-bold text-purple-400">5+</p>
-                  <p className="text-sm text-gray-400">Years Experience</p>
-                </div>
-                <div className="bg-gray-800 p-4 rounded-lg text-center flex-1">
-                  <p className="text-3xl font-bold text-indigo-400">3</p>
-                  <p className="text-sm text-gray-400">Research Papers</p>
-                </div>
               </div>
             </motion.div>
           </div>
@@ -116,7 +108,7 @@ const AboutPage = ({ resumeData }) => {
       </section>
 
       {/* Education & Experience */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-black mt-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Education */}
@@ -234,7 +226,7 @@ const AboutPage = ({ resumeData }) => {
               },
               {
                 category: "Soft Skills",
-                skills: ["Research Methodology", "Technical Writing", "Cross-functional Collaboration", "Project Management", "Mentoring"]
+                skills: ["Research Methodology", "Technical Writing", "Cross-functional Collaboration", "Mentoring"]
               },
             ].map((skillGroup, idx) => (
               <motion.div
@@ -327,12 +319,12 @@ const AboutPage = ({ resumeData }) => {
             >
               <div className="flex items-center gap-3 justify-center mb-4">
                 <Award className="h-8 w-8 text-yellow-300" />
-                <h2 className="text-3xl font-bold">Achievements</h2>
+                {/* <h2 className="text-3xl font-bold">Achievements</h2> */}
               </div>
             </motion.div>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-8">
+          {/* <div className="flex flex-wrap justify-center gap-8">
             {[
               "Published research on efficient real-time object detection algorithms",
               "Developed ML model that increased prediction accuracy by 17%",
@@ -356,7 +348,7 @@ const AboutPage = ({ resumeData }) => {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

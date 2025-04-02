@@ -2,7 +2,7 @@
   "name": "om-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/om-portfolio",
+  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/om-portfolio",
   "dependencies": {
     "framer-motion": "^10.12.16",
     "gh-pages": "^6.3.0",
