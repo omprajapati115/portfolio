@@ -36,7 +36,11 @@ This is a modern, responsive portfolio website built with React, showcasing my s
 
 ## Deployment
 
-The site is deployed using GitHub Pages and can be accessed at [https://yourusername.github.io/om-portfolio](https://yourusername.github.io/om-portfolio)
+The site is deployed using GitHub Pages and can be accessed at [https://omprajapati115.github.io/portfolio](https://omprajapati115.github.io/portfolio)
+
+## License
+
+MIT License
 
 ## Resume Upload Feature
 
